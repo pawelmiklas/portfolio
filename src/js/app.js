@@ -26,3 +26,12 @@ listButton.forEach((list, index) => {
         list.classList.add("list__button--active");
     });
 });
+document.onreadystatechange = () => {
+    if (document.readyState === "complete") {
+        document.querySelector("#loader-wrapper").classList.add("out");
+    }
+};
+
+// setTimeout(() => {
+//     document.querySelector("#loader-wrapper").classList.add("out");
+// }, 5000);
