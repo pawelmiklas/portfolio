@@ -10,3 +10,7 @@ $darkColor: #1d1d1d;
 
 //FONTS
 $defaultFont: "Roboto Condensed", sans-serif;
+
+//TRANSITIONS
+$cubicBezier: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+$cubicBezierTitle: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;

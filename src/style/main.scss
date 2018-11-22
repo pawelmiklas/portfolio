@@ -2,8 +2,8 @@
 // @charset "utf-8";
 // @import "~bulma/bulma";
 
-@import "partials/variables";
 // @import "partials/mixins";
+@import "partials/variables";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700");
 
 body {
@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
 }
 
-// loading page
+// loading page.
 .out {
     transform: translateY(-100%);
 }
@@ -31,9 +31,8 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: #ecf0f1;
-    /* display: none; */
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+    background: $whiteColor;
+    transition: $cubicBezier;
 }
 .load {
     position: absolute;
@@ -42,7 +41,6 @@ body {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    /* display: none; */
 }
 
 .load hr {
@@ -94,7 +92,6 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    // z-index: -10;
 }
 
 .nav {
@@ -131,9 +128,9 @@ body {
             span {
                 font-style: italic;
                 position: relative;
-                transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+                transition: $cubicBezierTitle;
                 &::before {
-                    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+                    transition: $cubicBezierTitle;
                     content: "";
                     bottom: 6px;
                     left: -5px;
@@ -149,7 +146,7 @@ body {
                         height: 100%;
                         bottom: 0;
                     }
-                    color: white;
+                    color: $whiteColor;
                 }
             }
         }
@@ -193,11 +190,19 @@ body {
     }
     &__socials {
         display: flex;
+        &:hover a {
+            opacity: 0.5;
+        }
         .socials__icon {
             padding: 1em;
             color: $darkColor;
             a {
+                transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
                 color: $darkColor;
+                &:hover {
+                    color: $darkColor;
+                    opacity: 1;
+                }
                 svg {
                     cursor: pointer;
                 }
@@ -212,6 +217,7 @@ body {
 // }
 .section {
     overflow: hidden;
+    // Section that is home page.
     &__content:first-child {
         background-image: url(/static/background2.jpg);
         background-repeat: no-repeat;
@@ -219,12 +225,13 @@ body {
         background-position: 50% 50%;
         width: 75vw;
         height: 100%;
-        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+        transition: $cubicBezier;
     }
+    // Section portfolio with carousel.
     &__content:nth-child(2) {
         width: 75vw;
         height: 100%;
-        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+        transition: $cubicBezier;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -237,7 +244,6 @@ body {
             cursor: pointer;
             width: 100%;
             position: relative;
-            // overflow: hidden;
             .fa-angle-left {
                 position: absolute;
                 top: 40%;
@@ -256,33 +262,37 @@ body {
                 align-items: center;
                 width: 70%;
                 position: absolute;
-                // transform: translateX(130%);
             }
-            // .section__slide:nth-of-type(2) {
-            //     display: flex;
-            //     justify-content: center;
-            //     align-items: center;
-            //     width: 70%;
-            //     position: absolute;
-            //     // img {
-            //     // max-width: 70%;
-            //     // }
-            // }
-            #first-slide {
-                transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+            .section__slide:nth-of-type(1) {
+                transition: $cubicBezier;
             }
-            #second-slide {
+            .section__slide:nth-of-type(2) {
+                transition: $cubicBezier;
                 transform: translateX(130%);
-                transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
             }
-            #third-slide {
+            .section__slide:nth-of-type(3) {
                 transform: translateX(260%);
-                transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+                transition: $cubicBezier;
             }
-            #fourth-slide {
+            .section__slide:nth-of-type(4) {
                 transform: translateX(390%);
-                transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+                transition: $cubicBezier;
             }
+            // #first-slide {
+            //     transition: $cubicBezier;
+            // }
+            // #second-slide {
+            //     transform: translateX(130%);
+            //     transition: $cubicBezier;
+            // }
+            // #third-slide {
+            //     transform: translateX(260%);
+            //     transition: $cubicBezier;
+            // }
+            // #fourth-slide {
+            //     transform: translateX(390%);
+            //     transition: $cubicBezier;
+            // }
             .slide {
                 display: flex;
                 flex-direction: column;
@@ -298,11 +308,12 @@ body {
             max-width: 60%;
         }
     }
+    // Section with about me
     &__content:nth-child(3) {
         width: 75vw;
         height: 100%;
         background-color: green;
-        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+        transition: $cubicBezier;
     }
 }
 
@@ -312,14 +323,11 @@ body {
 .transform-to-about {
     transform: translateY(-200%);
 }
-.slide-transform {
-    transform: translateX(0%);
-}
 
-.offscreen {
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    position: absolute;
-}
+// .offscreen {
+//     clip: rect(0 0 0 0);
+//     height: 1px;
+//     width: 1px;
+//     margin: -1px;
+//     position: absolute;
+// }
