@@ -10,6 +10,16 @@ const preLoader = (() => {
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
+	const hamburgerIcon = document.querySelector("#nav-icon2");
+	const nav = document.querySelector(".nav");
+
+	const hamburgerMenu = (() => {
+		hamburgerIcon.addEventListener("click", () => {
+			hamburgerIcon.classList.toggle("open");
+			nav.classList.toggle("nav-fixed");
+		})
+	})();
+
 	const slider = (() => {
 		const arrowRight = document.querySelector('.fa-angle-right');
 		const arrowLeft = document.querySelector('.fa-angle-left');
@@ -43,12 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		const nameOfContent = ['transform-to-home', 'transform-to-project', 'transform-to-about'];
 		listButton.forEach((list, index) => {
 			list.addEventListener('click', () => {
+
 				listButton.forEach((btn) => btn.classList.remove('list__button--active'));
 				sectionContent.forEach((section) => {
 					section.className = 'section__content';
 					section.classList.add(nameOfContent[index]);
 				});
 				list.classList.add('list__button--active');
+				if (nav.classList.contains("nav-fixed")) {
+					hamburgerIcon.classList.toggle("open");
+					nav.classList.toggle("nav-fixed");
+				}
 			});
 		});
 	})();
