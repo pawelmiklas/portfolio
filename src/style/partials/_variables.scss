@@ -1,16 +1,16 @@
 // https://coolors.co/efeeee-57467b-7cb4b8-70f8ba-cafe48
-
 //COLORS
-$whiteColor: #efefef;
+$whiteColor: #fff;
+$grayColor: #efefef;
 $violetColor: #57467b;
 $blueColor: #7cb4b8;
 $aquaColor: #70f8ba;
 $yellowColor: #cafe48;
 $darkColor: #1d1d1d;
-
 //FONTS
-$defaultFont: "Roboto Condensed", sans-serif;
-
+$defaultFont: "Roboto Condensed",
+sans-serif;
 //TRANSITIONS
 $cubicBezier: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+$cubicBezierFaster: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
 $cubicBezierTitle: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;

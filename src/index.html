@@ -8,6 +8,8 @@
     <title>Pawel Miklas portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/png" href="static/logo.png" />
+    <!-- <meta name="theme-color" content="#ff6600" /> -->
 </head>
 
 <body>
@@ -33,7 +35,7 @@
             <div class="container-nav">
 
                 <div class="nav__logo">
-                    <p>Paweł Mikłas</p>
+                    <img src="static/logo.png" alt="logo">
                 </div>
                 <div class="nav__list">
                     <ul>
@@ -43,9 +45,16 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="list__button" id="projects-btn">
+                            <a href="#" class="list__button" id="projects-btn">
                                 projekty
                             </a>
+                            <ul class="drop-down">
+                                <li>Pizza portal</li>
+                                <li>Portfolio agencji</li>
+                                <li>Portfolio fotografa</li>
+                                <li>Tablice Schulza</li>
+                                <!-- <li></li> -->
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="list__button" id="about-btn">
@@ -64,13 +73,16 @@
                     <h3>Jestem front-end developerem, zobacz moje projekty.</h3>
                 </div>
                 <div class="content__timeline">
-                    <div class="timeline__item"></div>
-                    <div class="timeline__item"></div>
-                    <div class="timeline__item"></div>
-                    <div class="timeline__item"></div>
-                    <div class="timeline__item"></div>
-                    <div class="timeline__item"></div>
-
+                    <div class="timeline__item timeline__item--position">
+                        <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
+                            iure
+                            asperiores aut suscipit aperiam nemo facere consequatur..</p>
+                    </div>
+                    <div class="timeline__item timeline__item--position"></div>
+                    <div class="timeline__item timeline__item--position"></div>
+                    <div class="timeline__item timeline__item--position"></div>
+                    <div class="timeline__item timeline__item--position"></div>
+                    <div class="timeline__item timeline__item--position"></div>
                 </div>
             </div>
         </section>
@@ -96,7 +108,7 @@
                 </div>
             </div>
             <div class="footer__name">
-                <h2>Paweł Mikłas</h2>
+                <h2>&copy; Paweł Mikłas</h2>
             </div>
         </footer>
     </main>
