@@ -4,15 +4,12 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack --config webpack.config.prod.js",
-        "lint:js": "./node_modules/.bin/eslint src/js/*.js",
-        "lint:styles": "stylelint \"src/**/*.scss\"",
-        "lint:html": "pa11y-ci ./src/**/*.html",
         "start:dev": "webpack-dev-server --config webpack.config.dev.js",
         "start": "webpack --config webpack.config.prod.js && http-server ./dist -o"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/erickzhao/static-html-webpack-boilerplate.git"
+        "url": "https://github.com/snaqu/portfolio"
     },
     "author": "pawel miklas",
     "license": "ISC",
@@ -26,7 +23,7 @@
         "copy-webpack-plugin": "^4.5.2",
         "css-loader": "^1.0.1",
         "cssnano": "^4.1.0",
-        "eslint": "^5.5.0",
+        "eslint": "^5.9.0",
         "eslint-config-airbnb-base": "^13.1.0",
         "eslint-plugin-import": "^2.14.0",
         "glob": "^7.1.3",

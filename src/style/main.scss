@@ -346,9 +346,10 @@ body {
             }
             .hide {
                 transition: $cubicBezierFaster;
-                width: 70%;
-                font-size: 1.3rem;
+                width: 75%;
+                font-size: 1.4rem;
                 display: none;
+                font-weight: 300;
             }
             &:nth-child(odd) {
                 margin-top: 8em;
@@ -368,11 +369,11 @@ body {
             }
             &:nth-child(3) {
                 background-image: url(/src/static/portfolio7.png);
-                background-position: 50% 20%;
+                background-position: 85% 20%;
             }
             &:nth-child(4) {
-                background-image: url(/src/static/portfolio5.png);
-                background-position: 10% 20%;
+                background-image: url(/src/static/portfolio3.png);
+                background-position: 50% 20%;
             }
             &:nth-child(5) {
                 background-image: url(/src/static/portfolio6.png);

@@ -2,122 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pawel Miklas portfolio</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous" />
-    <link rel="shortcut icon" type="image/png" href="static/logo.png" />
-    <!-- <meta name="theme-color" content="#ff6600" /> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Pawel Miklas portfolio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous" />
+	<link rel="shortcut icon" type="image/png" href="static/logo.png" />
+	<!-- <meta name="theme-color" content="#ff6600" /> -->
 </head>
 
 <body>
-    <div id="loader-wrapper">
-        <div class="load">
-            <hr />
-            <hr />
-            <hr />
-            <hr />
-        </div>
-    </div>
+	<div id="loader-wrapper">
+		<div class="load">
+			<hr />
+			<hr />
+			<hr />
+			<hr />
+		</div>
+	</div>
 
-    <!-- .element${$}*10 -->
-    <!--
+	<!-- .element${$}*10 -->
+	<!--
             <picture>
               <source type="image/webp" srcset="static/logo.webp" />
               <source type="image/png" srcset="static/logo.png" />
               <img src="static/logo.png" alt="logo" />
             </picture>
         -->
-    <main>
-        <nav class="nav">
-            <div class="container-nav">
+	<main>
+		<nav class="nav">
+			<div class="container-nav">
+				<div class="nav__logo">
+					<img src="static/logo.png" alt="logo">
+				</div>
+				<div class="nav__list">
+					<ul>
+						<li>
+							<a href="" class="list__button list__button--active" id="home-btn">
+								home
+							</a>
+						</li>
+						<li>
+							<a href="#" class="list__button" id="projects-btn">
+								projekty
+							</a>
+							<ul class="drop-down">
+								<li>Pizza portal</li>
+								<li>Portfolio agencji</li>
+								<li>Portfolio fotografa</li>
+								<li>Tablice Schulza</li>
+								<!-- <li></li> -->
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="list__button" id="about-btn">
+								o mnie
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="content">
+			<div class="container">
+				<div class="content__header">
+					<h1>Hej, tu <span>Paweł Mikłas</span></h1>
+					<h1>Lubię robić użyteczne rzeczy dla ludzi!</h1>
+					<h3>Jestem front-end developerem, zobacz moje projekty.</h3>
+				</div>
+				<div class="content__timeline">
+					<div class="timeline__item timeline__item--position">
+						<p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+					</div>
+					<div class="timeline__item timeline__item--position">
+						<p class="hide">Pizza portal, miejsce gdzie zamówisz i stworzysz swoją idealną pizze.</p>
+					</div>
+					<div class="timeline__item timeline__item--position">
+						<p class="hide">Portfolio fotografa, strona odwzorowana z projektu psd.</p>
+					</div>
+					<div class="timeline__item timeline__item--position">
+						<p class="hide">Tablice schulza, aplikacja pomagająca rozwinąć peryferyje widzenie oraz szybkość
+							czytania</.p>
+					</div>
+					<div class="timeline__item timeline__item--position">
+						<p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
+							iure
+							asperiores aut suscipit aperiam nemo facere consequatur..</p>
+					</div>
+					<div class="timeline__item timeline__item--position">
+						<p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
+							iure
+							asperiores aut suscipit aperiam nemo facere consequatur..</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__socials">
+				<div class="socials__icon">
+					<a href="https://github.com/snaqu"><i class="fab fa-github fa-2x xd"></i></a>
+				</div>
+				<div class="socials__icon">
+					<a href="https://www.linkedin.com/in/miklas-pawel/">
+						<i class="fab fa-linkedin-in fa-2x"></i>
+					</a>
+				</div>
+				<div class="socials__icon">
+					<a href="https://www.facebook.com/miklas.pawel">
+						<i class="fab fa-facebook-f fa-2x"></i>
+					</a>
+				</div>
+				<div class="socials__icon">
+					<a target="_top" href="mailto:pablomiklas@gmail.com">
+						<i class="far fa-envelope fa-2x"></i>
+					</a>
+				</div>
+			</div>
+			<div class="footer__name">
+				<h2>&copy; Paweł Mikłas</h2>
+			</div>
+		</footer>
+	</main>
 
-                <div class="nav__logo">
-                    <img src="static/logo.png" alt="logo">
-                </div>
-                <div class="nav__list">
-                    <ul>
-                        <li>
-                            <a href="" class="list__button list__button--active" id="home-btn">
-                                home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="list__button" id="projects-btn">
-                                projekty
-                            </a>
-                            <ul class="drop-down">
-                                <li>Pizza portal</li>
-                                <li>Portfolio agencji</li>
-                                <li>Portfolio fotografa</li>
-                                <li>Tablice Schulza</li>
-                                <!-- <li></li> -->
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="list__button" id="about-btn">
-                                o mnie
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="content">
-            <div class="container">
-                <div class="content__header">
-                    <h1>Hej, tu <span>Paweł Mikłas</span></h1>
-                    <h1>Lubię robić użyteczne rzeczy dla ludzi!</h1>
-                    <h3>Jestem front-end developerem, zobacz moje projekty.</h3>
-                </div>
-                <div class="content__timeline">
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
-                            iure
-                            asperiores aut suscipit aperiam nemo facere consequatur..</p>
-                    </div>
-                    <div class="timeline__item timeline__item--position"></div>
-                    <div class="timeline__item timeline__item--position"></div>
-                    <div class="timeline__item timeline__item--position"></div>
-                    <div class="timeline__item timeline__item--position"></div>
-                    <div class="timeline__item timeline__item--position"></div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer__socials">
-                <div class="socials__icon">
-                    <a href="https://github.com/snaqu"><i class="fab fa-github fa-2x xd"></i></a>
-                </div>
-                <div class="socials__icon">
-                    <a href="https://www.linkedin.com/in/miklas-pawel/">
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                    </a>
-                </div>
-                <div class="socials__icon">
-                    <a href="https://www.facebook.com/miklas.pawel">
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                    </a>
-                </div>
-                <div class="socials__icon">
-                    <a target="_top" href="mailto:pablomiklas@gmail.com">
-                        <i class="far fa-envelope fa-2x"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer__name">
-                <h2>&copy; Paweł Mikłas</h2>
-            </div>
-        </footer>
-    </main>
 
 
 
 
-
-    <!-- <main class="main">
+	<!-- <main class="main">
         <div id="nav-icon2" class="display-hamburger">
             <span></span>
             <span></span>
