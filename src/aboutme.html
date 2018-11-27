@@ -11,19 +11,11 @@
     <link rel="shortcut icon" type="image/png" href="static/logo.png" />
     <!-- <script type="text/javascript" src="app.bundle.js"></script> -->
     <script type="text/javascript" src="main.bundle.js"></script>
-    <script type="text/javascript" src="preLoader.bundle.js"></script>
+    <!-- <script type="text/javascript" src="preLoader.bundle.js"></script> -->
     <!-- <meta name="theme-color" content="#ff6600" /> -->
 </head>
 
 <body>
-    <div id="loader-wrapper">
-        <div class="load">
-            <hr />
-            <hr />
-            <hr />
-            <hr />
-        </div>
-    </div>
 
     <!-- .element${$}*10 -->
     <!--
@@ -44,7 +36,7 @@
                 <div class="nav__list">
                     <ul>
                         <li>
-                            <a href="" class="list__button list__button--active" id="home-btn">
+                            <a href="index.html" class="list__button list__button--active" id="home-btn">
                                 home
                             </a>
                         </li>
@@ -61,12 +53,12 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="aboutme.html" class="list__button" id="about-btn">
+                            <a href="aboutme.hmtl" class="list__button" id="about-btn">
                                 o mnie
                             </a>
                         </li>
                         <li>
-                            <a href="/contact.html" class="list__button" id="contact-btn">
+                            <a href="contact.html" class="list__button" id="contact-btn">
                                 kontakt
                             </a>
                         </li>
@@ -74,37 +66,58 @@
                 </div>
             </div>
         </nav>
-        <section class="content">
+        <section class="aboutme">
             <div class="container">
-                <div class="content__header">
-                    <h1>Hej, tu <span>Paweł Mikłas</span></h1>
-                    <h1>Lubię robić użyteczne rzeczy dla ludzi!</h1>
-                    <h3>Jestem front-end developerem, zobacz moje projekty.</h3>
+                <div class="aboutme__photo">
+                    <!-- <img src="/static/me.png" alt="me" /> -->
                 </div>
-                <div class="content__timeline">
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                <div class="aboutme__article">
+                    <div class="article">
+                        <div class="article__title">
+                            <p>
+                                Czym się zajmuję?
+                            </p>
+                        </div>
+                        <div class="article__description">
+                            <h2>Junior Front-end Developer, Freelancer</h2>
+                            <p>
+                                Z wykształcenia jestem informatykiem oraz ambasadorem <a href="https://instytutkryptografii.pl/">Instytutu
+                                    Kryptografii</a>. Od ponad roku pracuję głównie z najnowszymi
+                                technologiami.
+                                Śledzę najnowsze trendy w branży a następnie wprowadzam je do moich projektów. Języki
+                                oraz narzędzia których używam:
+                            </p>
+                        </div>
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Pizza portal, miejsce gdzie zamówisz i stworzysz swoją idealną pizze.</p>
+                    <div class="article">
+                        <div class="article__title">
+                            <p>Co w przyszłości?</p>
+                        </div>
+                        <div class="article__description">
+                            <h2>Full-stack Developer</h2>
+                            <p>
+                                Moim obecnym celem jest biegłe opanowanie Reacta, Reduxa oraz technologii
+                                front-endowych.
+                                W przyszłości moim planem jest nauka w kierunku Full-stack developera, oraz opanowanie
+                                skilli
+                                miękkich - chciałbym zarządzać zespołem.
+                            </p>
+                        </div>
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Portfolio fotografa, strona odwzorowana z projektu psd.</p>
-                    </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Tablice schulza, aplikacja pomagająca rozwinąć peryferyje widzenie oraz
-                            szybkość
-                            czytania</.p>
-                    </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
-                            iure
-                            asperiores aut suscipit aperiam nemo facere consequatur..</p>
-                    </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
-                            iure
-                            asperiores aut suscipit aperiam nemo facere consequatur..</p>
+                    <div class="article">
+                        <div class="article__title">
+                            <p>
+                                Krótko o mnie
+                            </p>
+                        </div>
+                        <div class="article__description">
+                            <h2>Skąd się wziąłem?</h2>
+                            <p>
+                                Jestem w ostatniej klasie szkoły technicznej na kierunku informatycznym. Na codzień
+                                interesuję się technologią blockchain, rynkiem krypto, nowinkami technologicznymi
+                                oraz zdrowiem.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
