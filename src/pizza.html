@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous" />
     <link rel="shortcut icon" type="image/png" href="static/logo.png" />
-    <!-- <script type="text/javascript" src="app.bundle.js"></script> -->
+    <script type="text/javascript" src="app.bundle.js"></script>
     <script type="text/javascript" src="main.bundle.js"></script>
     <!-- <script type="text/javascript" src="preLoader.bundle.js"></script> -->
     <!-- <meta name="theme-color" content="#ff6600" /> -->
@@ -45,20 +45,27 @@
                                 projekty
                             </a>
                             <ul class="drop-down">
-                                <li>Pizza portal</li>
-                                <li>Portfolio agencji</li>
-                                <li>Portfolio fotografa</li>
-                                <li>Tablice Schulza</li>
-                                <!-- <li></li> -->
+                                <a href="pizza.html">
+                                    <li>Pizza portal</li>
+                                </a>
+                                <a href="#">
+                                    <li>Portfolio agencji</li>
+                                </a>
+                                <a href="#">
+                                    <li>Portfolio fotografa</li>
+                                </a>
+                                <a href="#">
+                                    <li>Tablice Schulza</li>
+                                </a>
                             </ul>
                         </li>
                         <li>
-                            <a href="aboutme.hmtl" class="list__button" id="about-btn">
+                            <a href="aboutme.html" class="list__button" id="about-btn">
                                 o mnie
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html" class="list__button" id="contact-btn">
+                            <a href="" class="list__button" id="contact-btn">
                                 kontakt
                             </a>
                         </li>
@@ -66,60 +73,35 @@
                 </div>
             </div>
         </nav>
-        <section class="aboutme">
+        <section class="portfolio">
             <div class="container">
-                <div class="aboutme__photo">
-                    <!-- <img src="/static/me.png" alt="me" /> -->
-                </div>
-                <div class="aboutme__article">
-                    <div class="article">
-                        <div class="article__title">
-                            <p>
-                                Czym się zajmuję?
-                            </p>
-                        </div>
-                        <div class="article__description">
-                            <h2>Junior Front-end Developer, Freelancer</h2>
-                            <p>
-                                Z wykształcenia jestem informatykiem oraz ambasadorem <a href="https://instytutkryptografii.pl/">Instytutu
-                                    Kryptografii</a>. Od ponad roku pracuję głównie z najnowszymi
-                                technologiami.
-                                Śledzę najnowsze trendy w branży a następnie wprowadzam je do moich projektów. Języki
-                                oraz narzędzia których używam:
-                                HTML5, CSS3 / Sass, Bootstrap / Bulma, Javascript (ES6+)
-                                => React, Webpack / Gulp, Photoshop.
-                            </p>
-                        </div>
+                <div class="portfolio__image"></div>
+                <div class="portfolio__description">
+                    <div class="portfolio__description--general">
+                        <h1>Pizza portal</h1>
+                        <p>Strona jest wizytówką pizzerni na której
+                            użytkownik może założyć konto,
+                            złożyć zamówienie oraz stworzyć własną spersonalizowaną pizzę. Koszyk jest
+                            zbudowany
+                            poprzez użycie local storage. Produkty są zaciągane z bazy następnie
+                            generowane na stronie poprzez php. Administracja posiada panel do najwazniejszych
+                            modyfikacji i podglądu informacji.
+                        </p>
                     </div>
-                    <div class="article">
-                        <div class="article__title">
-                            <p>Co w przyszłości?</p>
-                        </div>
-                        <div class="article__description">
-                            <h2>Full-stack Developer</h2>
-                            <p>
-                                Moim obecnym celem jest biegłe opanowanie Reacta, Reduxa oraz technologii
-                                front-endowych.
-                                W przyszłości moim planem jest nauka w kierunku Full-stack developera, oraz opanowanie
-                                skilli
-                                miękkich - chciałbym zarządzać zespołem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__title">
-                            <p>
-                                Krótko o mnie
-                            </p>
-                        </div>
-                        <div class="article__description">
-                            <h2>Skąd się wziąłem?</h2>
-                            <p>
-                                Jestem w ostatniej klasie szkoły technicznej na kierunku informatycznym. Na codzień
-                                interesuję się technologią blockchain, rynkiem krypto, nowinkami technologicznymi
-                                oraz zdrowiem.
-                            </p>
-                        </div>
+                    <div class="portfolio__description--tech">
+                        <h1>Technologie</h1>
+                        <p>
+                            HTML5, Sass, Javascript ES6<br /> PHP, Mysql, Gulp
+                        </p>
+                        <!-- <ul>
+                            <li>HTML5</li>
+                            <li>Sass</li>
+                            <li>Javascript ES6</li>
+                            <li>PHP</li>
+                            <li>MySql</li>
+                            <li>Gulp</li>
+                        </ul> -->
+                        <!-- <input type="button" value="live!" /> -->
                     </div>
                 </div>
             </div>

@@ -216,6 +216,12 @@ body {
                 position: relative;
                 .drop-down {
                     display: none;
+                    a {
+                        font-weight: 300;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                        color: $darkColor;
+                    }
                 }
                 &:hover {
                     .drop-down {
@@ -538,6 +544,65 @@ body {
             }
             h2 {
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+// === PORTFOLIO ===
+.portfolio {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    &__image {
+        width: 100%;
+        min-height: 600px;
+        background-image: url(/static/pizza.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin: 2em 0;
+    }
+    &__description {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1em 1em;
+        min-height: 300px;
+        &--general {
+            padding: .5em;
+            text-align: justify;
+            h1 {
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            p {
+                font-weight: 300;
+                line-height: 1.5em;
+                font-size: 1.2rem;
+            }
+        }
+        &--tech {
+            // background-color: #70f8bb57;
+            padding: .5em;
+            text-align: right;
+            h1 {
+                // margin-left: 1.5em;
+                // text-align: left;
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            p {
+                // margin-left: 3em;
+                // text-align: left;
+                // font-weight: 300;
+                // line-height: 1.4em;
+                // font-size: 1.2rem;
+                // list-style: none;
+                //////
+                font-weight: 300;
+                line-height: 1.5em;
+                font-size: 1.2rem;
             }
         }
     }
