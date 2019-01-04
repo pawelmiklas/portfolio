@@ -8,23 +8,23 @@ const common = require('./webpack.config.common.js');
 module.exports = merge(common, {
 	mode: 'production',
 	plugins: [
-		new CleanWebpackPlugin([ 'dist' ]),
+		new CleanWebpackPlugin(['dist']),
 		new OptimizeCssAssetsPlugin({
 			assetNameRegExp: /\.css$/g,
 			cssProcessor: cssnano,
 			cssProcessorOptions: { discardComments: { removeAll: true } },
 			canPrint: true
 		}),
-		new ImageminWebpWebpackPlugin({
-			config: [
-				{
-					test: /\.(jpe?g|png)$/,
-					options: {
-						quality: 75
-					}
-				}
-			],
-			detailedLogs: false
-		})
+		// new ImageminWebpWebpackPlugin({
+		// 	config: [
+		// 		{
+		// 			test: /\.(jpe?g|png)$/,
+		// 			options: {
+		// 				quality: 75
+		// 			}
+		// 		}
+		// 	],
+		// 	detailedLogs: false
+		// })
 	]
 });

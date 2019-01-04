@@ -10,8 +10,10 @@
         crossorigin="anonymous" />
     <link rel="shortcut icon" type="image/png" href="static/logo.png" />
     <!-- <script type="text/javascript" src="app.bundle.js"></script> -->
+    <script type="text/javascript" src="app.bundle.js"></script>
     <script type="text/javascript" src="main.bundle.js"></script>
     <script type="text/javascript" src="preLoader.bundle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <meta name="theme-color" content="#ff6600" /> -->
 </head>
 
@@ -40,6 +42,9 @@
                     <a href="index.html">
                         <img src="static/logo.png" alt="logo" />
                     </a>
+                    <div class="nav__hamburger" id="nav__hamburger">
+                        <img src="static/hamburger.svg" alt="hamburger" />
+                    </div>
                 </div>
                 <div class="nav__list">
                     <ul>
@@ -75,36 +80,65 @@
             </div>
         </nav>
         <section class="content">
-            <div class="container">
+            <div class="container container__content">
                 <div class="content__header">
                     <h1>Hej, tu <span>Paweł Mikłas</span></h1>
                     <h1>Lubię robić użyteczne rzeczy dla ludzi!</h1>
                     <h3>Jestem front-end developerem, zobacz moje projekty.</h3>
                 </div>
                 <div class="content__timeline">
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                        </a>
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Pizza portal, miejsce gdzie zamówisz i stworzysz swoją idealną pizze.</p>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Pizza portal, miejsce gdzie zamówisz i stworzysz swoją idealną pizze.</p>
+                        </a>
+
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Portfolio fotografa, strona odwzorowana z projektu psd.</p>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Portfolio fotografa, strona odwzorowana z projektu psd.</p>
+                        </a>
+
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Tablice schulza, aplikacja pomagająca rozwinąć peryferyje widzenie oraz
-                            szybkość
-                            czytania</.p>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Tablice schulza, aplikacja pomagająca rozwinąć peryferyje widzenie oraz
+                                szybkość
+                                czytania</p>
+                        </a>
+
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
-                            iure
-                            asperiores aut suscipit aperiam nemo facere consequatur..</p>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                        </a>
                     </div>
-                    <div class="timeline__item timeline__item--position">
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, reiciendis
-                            iure
-                            asperiores aut suscipit aperiam nemo facere consequatur..</p>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                        </a>
+                    </div>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                        </a>
+                    </div>
+                    <div class="timeline__item timeline__item--position" data-aos="fade-up" data-aos-delay="250"
+                        data-aos-once="true">
+                        <a href="pizza.html" class="content__timeline--link hide">
+                            <p class="hide">Strona agencji marketingowej, zbudowana na podstawie projektu psd.</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -112,15 +146,15 @@
         <footer class="footer">
             <div class="footer__socials">
                 <div class="socials__icon">
-                    <a href="https://github.com/snaqu"><i class="fab fa-github fa-2x xd"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/snaqu"><i class="fab fa-github fa-2x xd"></i></a>
                 </div>
                 <div class="socials__icon">
-                    <a href="https://www.linkedin.com/in/miklas-pawel/">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/miklas-pawel/">
                         <i class="fab fa-linkedin-in fa-2x"></i>
                     </a>
                 </div>
                 <div class="socials__icon">
-                    <a href="https://www.facebook.com/miklas.pawel">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/miklas.pawel">
                         <i class="fab fa-facebook-f fa-2x"></i>
                     </a>
                 </div>
@@ -340,6 +374,10 @@
             </div>
         </section>
     </main> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

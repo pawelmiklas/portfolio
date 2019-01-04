@@ -4,19 +4,31 @@
 //     document.querySelector("#loader-wrapper").classList.add("out");
 // }, 1000);
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
 	console.log('ham');
-	const hamburgerIcon = document.querySelector('#nav-icon2');
-	const nav = document.querySelector('.nav');
-	const hamburgerMenu = (() => {
-		hamburgerIcon.addEventListener('click', () => {
-			hamburgerIcon.classList.toggle('open');
-			nav.classList.toggle('nav-fixed');
-		});
+
+	const hamburgerIcon = document.querySelector('#nav__hamburger');
+	const list = document.querySelector('.nav__list');
+	const logo = document.querySelector('.nav__logo');
+	hamburgerIcon.addEventListener('click', () => {
+		list.classList.toggle('nav__list--active');
+		logo.classList.toggle('nav__logo--padding');
 	});
+
+
+
+
+
+
+	// const hamburgerIcon = document.querySelector('#nav-icon2');
+	// const nav = document.querySelector('.nav');
+	// const hamburgerMenu = (() => {
+	// 	hamburgerIcon.addEventListener('click', () => {
+	// 		hamburgerIcon.classList.toggle('open');
+	// 		nav.classList.toggle('nav-fixed');
+	// 	});
+	// });
 
 	const timeChanger = (() => {
 		const timeBlock = document.querySelector('.contact__time');
