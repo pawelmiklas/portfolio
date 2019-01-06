@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	if (localStorage.hasOwnProperty('isOn') && (location.pathname.includes('/index.html') || location.pathname === '/')) {
+	if (localStorage.hasOwnProperty('isOn') && (location.pathname === '/index.html' || location.pathname === '/')) {
 		const loader = document.querySelector('#loader-wrapper');
 		loader.classList.add('display-none');
 	}
