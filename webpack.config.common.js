@@ -11,7 +11,10 @@ const generateHTMLPlugins = () =>
 			new HTMLWebpackPlugin({
 				filename: path.basename(dir), // Output
 				template: dir, // Input
-				inject: false
+				inject: false,
+				minify: {
+					collapseWhitespace: true
+				}
 			})
 	);
 
@@ -22,6 +25,7 @@ module.exports = {
 	entry: {
 		app: './src/js/app.js',
 		preLoader: './src/js/preloader.js',
+		time: './src/js/time.js',
 		main: './src/style/main.scss',
 	},
 	output: {

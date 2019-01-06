@@ -11,20 +11,9 @@
     <link rel="shortcut icon" type="image/png" href="static/logo.png" />
     <script type="text/javascript" src="app.bundle.js"></script>
     <script type="text/javascript" src="main.bundle.js"></script>
-    <!-- <script type="text/javascript" src="preLoader.bundle.js"></script> -->
-    <!-- <meta name="theme-color" content="#ff6600" /> -->
 </head>
 
 <body>
-
-    <!-- .element${$}*10 -->
-    <!--
-            <picture>
-              <source type="image/webp" srcset="static/logo.webp" />
-              <source type="image/png" srcset="static/logo.png" />
-              <img src="static/logo.png" alt="logo" />
-            </picture>
-        -->
     <main>
         <nav class="nav">
             <div class="container-nav">
@@ -32,6 +21,9 @@
                     <a href="index.html">
                         <img src="static/logo.png" alt="logo" />
                     </a>
+                    <div class="nav__hamburger" id="nav__hamburger">
+                        <img src="static/hamburger.svg" alt="hamburger" />
+                    </div>
                 </div>
                 <div class="nav__list">
                     <ul>
@@ -48,13 +40,25 @@
                                 <a href="pizza.html">
                                     <li>Pizza portal</li>
                                 </a>
-                                <a href="#">
+                                <a href="agencja.html">
                                     <li>Portfolio agencji</li>
                                 </a>
-                                <a href="#">
+                                <a href="meetup.html">
+                                    <li>Meetup page</li>
+                                </a>
+                                <a href="uixrex.html">
+                                    <li>Landing page UIXREX</li>
+                                </a>
+                                <a href="photo.html">
                                     <li>Portfolio fotografa</li>
                                 </a>
-                                <a href="#">
+                                <a href="food.html">
+                                    <li>Food landing page</li>
+                                </a>
+                                <a href="forms.html">
+                                    <li>Forms</li>
+                                </a>
+                                <a href="schulz.html">
                                     <li>Tablice Schulza</li>
                                 </a>
                             </ul>
@@ -65,7 +69,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="list__button" id="contact-btn">
+                            <a href="contact.html" class="list__button" id="contact-btn">
                                 kontakt
                             </a>
                         </li>
@@ -74,8 +78,8 @@
             </div>
         </nav>
         <section class="portfolio">
-            <div class="container">
-                <div class="portfolio__image"></div>
+            <div class="container container--portfolio">
+                <div class="portfolio__image portfolio__image--pizza"></div>
                 <div class="portfolio__description">
                     <div class="portfolio__description--general">
                         <h1>Pizza portal</h1>
@@ -94,15 +98,6 @@
                         <p>
                             HTML5, Sass, Javascript ES6<br /> Webpack, Babel
                         </p>
-                        <!-- <ul>
-                            <li>HTML5</li>
-                            <li>Sass</li>
-                            <li>Javascript ES6</li>
-                            <li>PHP</li>
-                            <li>MySql</li>
-                            <li>Gulp</li>
-                        </ul> -->
-                        <!-- <input type="button" value="live!" /> -->
                     </div>
                 </div>
             </div>
@@ -133,211 +128,6 @@
             </div>
         </footer>
     </main>
-
-
-
-
-
-    <!-- <main class="main">
-        <div id="nav-icon2" class="display-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="nav">
-            <div class="nav__title">
-                <h1>Hej, tu <span>Paweł Mikłas</span></h1>
-                <h3>front-end developer</h3>
-            </div>
-            <div class="nav__list">
-                <ul>
-                    <li>
-                        <button class="list__button list__button--active" id="home-btn">
-                            home
-                        </button>
-                    </li>
-                    <li>
-                        <button class="list__button" id="projects-btn">
-                            projekty
-                        </button>
-                    </li>
-                    <li>
-                        <button class="list__button" id="about-btn">
-                            o mnie
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav__socials">
-                <div class="socials__icon">
-                    <a href="https://github.com/snaqu"><i class="fab fa-github fa-2x xd"></i></a>
-                </div>
-                <div class="socials__icon">
-                    <a href="https://www.linkedin.com/in/miklas-pawel/">
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                    </a>
-                </div>
-                <div class="socials__icon">
-                    <a href="https://www.facebook.com/miklas.pawel">
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                    </a>
-                </div>
-                <div class="socials__icon">
-                    <a target="_top" href="mailto:pablomiklas@gmail.com">
-                        <i class="far fa-envelope fa-2x"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <section class="section">
-            <div class="section__content"></div>
-            <div class="section__content">
-                <div class="section__slider">
-                    <i class="fas fa-angle-left fa-4x"></i>
-                    <div class="section__slide" id="first-slide">
-                        <div class="slide">
-                            <picture>
-                                <source type="static/webp" srcset="static/portfolio.webp" />
-                                <source type="static/png" srcset="static/portfolio.png" />
-                                <img src="static/portfolio.png" alt="portfolio" />
-                            </picture>
-                            <div class="slide__info">
-                                <h1>Pizza portal</h1>
-                                <p>
-                                    Aplikacja jest wizytówką pizzerni.
-                                    Użytkownik może założyć konto,
-                                    złożyć zamówienie oraz stworzyć własną spersonalizowaną pizzę. Koszyk jest
-                                    zbudowany
-                                    poprzez użycie local storage. Produkty są zaciągane z bazy następnie
-                                    generowane na stronie poprzez php. Administracja posiada panel do najwazniejszych
-                                    modyfikacji i podglądu informacji. Do budowy strony użylem: html, sass, vanila js,
-                                    php, mysql.
-                                </p>
-                                <a href="https://github.com/snaqu/online-order-pizza">
-                                    <input type="button" value="Zobacz live!">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section__slide" id="fourth-slide">
-                        <div class="slide">
-                            <picture>
-                                <source type="static/webp" srcset="static/portfolio4.webp" />
-                                <source type="static/png" srcset="static/portfolio4.png" />
-                                <img src="static/portfolio4.png" alt="portfolio" />
-                            </picture>
-                            <div class="slide__info">
-                                <h1>Projekt psd do html</h1>
-                                <p>
-                                    Strona zaprojektowana na podstawie gotowego layoutu. Jest w pełni responsywna.
-                                    Do budowy strony wykorzystałem html, sass, javascript oraz webpacka.
-                                </p>
-                                <a href="https://snaqu.github.io/website-project-creative-agency/build/home.html">
-                                    <input type="button" value="Zobacz live!">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section__slide" id="third-slide">
-                        <div class="slide">
-                            <picture>
-                                <source type="static/webp" srcset="static/portfolio3.webp" />
-                                <source type="static/png" srcset="static/portfolio3.png" />
-                                <img src="static/portfolio3.png" alt="portfolio" />
-                            </picture>
-                            <div class="slide__info">
-                                <h1>Tablice Schulza</h1>
-                                <p>
-                                    Ucząc się szybkiego czytania korzystałem z kartek na których były narysowane
-                                    tablice Schulza. Są to tabelki w których zależnie od rozmiaru znajdują się liczby
-                                    lub cyfry. Naszym zadaniem jest skupić wzrok na samym środku tabeli a widzeniem
-                                    peryferyjnym odczytać poprawną kolejność rozmieszczenia cyfer lub liter.
-                                    Projektowanie kolejnych tablic i ich druk to męczące zadanie, więc postanowiłem
-                                    zrobić aplikacje. Wykorzystałem html, css, javascript.
-                                </p>
-                                <a href="https://snaqu.github.io/schultz-tables/">
-                                    <input type="button" value="Zobacz live!">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section__slide" id="second-slide">
-                        <div class="slide">
-                            <picture>
-                                <source type="static/webp" srcset="static/portfolio2.webp" />
-                                <source type="static/png" srcset="static/portfolio2.png" />
-                                <img src="static/portfolio2.png" alt="portfolio" />
-                            </picture>
-                            <div class="slide__info">
-                                <h1>Projekt psd do html</h1>
-                                <p>
-                                    Strona zaprojektowana na podstawie gotowego layoutu. Do napisania strony nie
-                                    używałem żadnego preprocesora, był to pierwszy z moich projektów. Dzisiaj na pewno
-                                    użyłbym webpacka.
-                                </p>
-                                <a href="https://snaqu.github.io/webiste-project-photograpy-portfolio/">
-                                    <input type="button" value="Zobacz live!">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <i class="fas fa-angle-right fa-4x"></i>
-                </div>
-            </div>
-            <div class="section__content">
-                <div class="content">
-                    <div class="content__text">
-                        <h1>O mnie</h1>
-                        <h3>
-                            Z wykształcenia jestem informatykiem oraz ambasadorem <a href="https://instytutkryptografii.pl/">Instytutu
-                                Kryptografii</a>. Od ponad roku pracuję głównie z najnowszymi
-                            technologiami.
-                            Moim celem jest rozwój w technologiach front-endowych oraz nauka technologi blockchain.
-                            Śledzę najnowsze trendy w branży a następnie wprowadzam je do moich projeków.
-                            Języki oraz narzędzia których używam:
-                        </h3>
-                    </div>
-                    <div class="content__technologies">
-                        <div class="content__element">
-                            <img src="static/javascript.svg" alt="javascript" />
-                            <p>JavaScript ES6, Ajax, callback, generators, prototypes, OOP.</p>
-                        </div>
-                        <div class="content__element">
-                            <img src="static/react.svg" alt="react" />
-                            <p>React podstawy frameworka - jestem w trakcie nauki.</p>
-                        </div>
-                        <div class="content__element">
-                            <img src="static/bulma.svg" alt="bulma" />
-                            <p>Bulma zestaw narzędzi ułatwiający budowanie interfejsu.</p>
-                        </div>
-                        <div class="content__element">
-                            <img src="static/sass.svg" alt="sass" />
-                            <p>Sass pozwala mi na znacznie szybszą i wydajniejszą pracę poprzez tworzenie zmiennych
-                                oraz klas.</p>
-                        </div>
-                        <div class="content__element">
-                            <img src="static/webpack.svg" alt="webpack" />
-                            <p>Webpack narzędzie które przyspiesza znaczaco moją pracę. Poprzez
-                                <a href="https://github.com/snaqu/static-html-webpack-boilerplate">
-                                    transpilacje, bundlowanie,
-                                    minifikacje etc.
-                                </a>
-                            </p>
-                        </div>
-                        <div class="content__element">
-                            <img src="static/photoshop.svg" alt="photoshop" />
-                            <p>Photoshop podstawowa znajomość do obróbki grafiki rastrowej oraz cięcia layoutów.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-    </main> -->
 </body>
 
 </html>
