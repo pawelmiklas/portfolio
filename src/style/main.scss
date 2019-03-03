@@ -249,6 +249,7 @@ body {
                 }
                 .drop-down {
                     display: none;
+                    width: 180px !important;
                     a {
                         font-weight: 300;
                         font-size: 1rem;
@@ -271,7 +272,7 @@ body {
                         background-color: $whiteColor;
                         li {
                             display: block;
-                            padding: .4em;
+                            padding: .25em;
                             color: gray;
                             background-color: $whiteColor;
                             @media screen and (max-width: 525px) {
@@ -408,7 +409,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: red;
+            background-color: white;
             height: 450px;
             position: relative;
             transition: $cubicBezierFaster;
@@ -454,42 +455,54 @@ body {
             }
             &:nth-child(1) {
                 // pizza
-                background-image: url(/static/portfolio5.png);
+                background-image: url(/static/portfolio5.jpg);
                 background-position: 10% 20%;
-            }
+            } // NEW
             &:nth-child(2) {
-                // simply
-                background-image: url(/static/portfolio6.png);
-                background-position: 50% 20%;
+                background-image: url(/static/portfolio6.jpg);
+                background-position: 50% 50%;
             }
             &:nth-child(3) {
-                // uixrex
-                background-image: url(/static/portfolio10.png);
-                background-position: 40% 20%;
+                background-image: url(/static/portfolio21.jpg);
+                background-position: 10% 20%;
             }
             &:nth-child(4) {
-                //meetup
-                background-image: url(/static/portfolio9.png);
+                background-image: url(/static/portfolio22.jpg);
+                background-position: 50% 50%;
+            } // END NEW
+            &:nth-child(5) {
+                // simply
+                background-image: url(/static/portfolio10.jpg);
                 background-position: 50% 20%;
             }
-            &:nth-child(5) {
-                //fudi
-                background-image: url(/static/portfolio11.png);
-                background-position: 50% 45%;
-            }
             &:nth-child(6) {
-                // photography
-                background-image: url(/static/portfolio2.png);
-                background-position: 70% 100%;
+                // uixrex
+                background-image: url(/static/portfolio20.jpg);
+                background-position: 40% 20%;
             }
             &:nth-child(7) {
-                // shultz
-                background-image: url(/static/portfolio8.png);
-                background-position: 70% 30%;
+                //meetup
+                background-image: url(/static/portfolio9.jpg);
+                background-position: 50% 20%;
             }
             &:nth-child(8) {
+                //fudi
+                background-image: url(/static/portfolio11.jpg);
+                background-position: 50% 45%;
+            }
+            &:nth-child(9) {
+                // photography
+                background-image: url(/static/portfolio2.jpg);
+                background-position: 70% 100%;
+            }
+            &:nth-child(10) {
+                // shultz
+                background-image: url(/static/portfolio8.jpg);
+                background-position: 70% 30%;
+            }
+            &:nth-child(11) {
                 // forms
-                background-image: url(/static/portfolio12.png);
+                background-image: url(/static/portfolio12.jpg);
                 background-position: 50% 50%;
             }
         }
@@ -610,7 +623,7 @@ body {
     min-height: 600px;
     padding: 4em 0;
     &__photo {
-        background-image: url(/static/me.png);
+        background-image: url(/static/me.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 70% 90%;
@@ -676,34 +689,43 @@ body {
     &__image {
         width: 100%;
         min-height: 600px;
-        background-image: url(/static/pizza.png);
+        background-image: url(/static/pizza.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
         margin: 2em 0;
         &--pizza {
-            background-image: url(/static/pizza.png);
+            background-image: url(/static/pizza.jpg);
         }
         &--agencja {
-            background-image: url(/static/agencja.png);
+            background-image: url(/static/agencja.jpg);
         }
         &--meetup {
-            background-image: url(/static/meetup.png);
+            background-image: url(/static/meetup.jpg);
         }
         &--uixrex {
-            background-image: url(/static/uixrex.png);
+            background-image: url(/static/uixrex.jpg);
         }
         &--photo {
-            background-image: url(/static/photo.png);
+            background-image: url(/static/photo.jpg);
         }
         &--food {
-            background-image: url(/static/food.png);
+            background-image: url(/static/food.jpg);
         }
         &--forms {
-            background-image: url(/static/forms.png);
+            background-image: url(/static/forms.jpg);
         }
         &--schulz {
-            background-image: url(/static/schulz.png);
+            background-image: url(/static/schulz.jpg);
+        }
+        &--weather {
+            background-image: url(/static/weather.jpg);
+        }
+        &--formreact {
+            background-image: url(/static/formreact.jpg);
+        }
+        &--notebook {
+            background-image: url(/static/notebook.jpg);
         }
     }
     &__description {
